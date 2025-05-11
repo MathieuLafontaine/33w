@@ -24,12 +24,16 @@ Text Domain: club-voyage
 //@import "base/titre";
 
 /* Layout */
+@import "layout/contenu-principal";
 @import "layout/general";
 @import "layout/entete";
 @import "layout/hero";
-@import "layout/piedpage"; //@import "layout/entete";
+@import "layout/piedpage";
+@import "layout/populaire";
+
 /* ////////////////////////////////  composants */
 @import "composants/recherche";
 @import "composants/gallerie";
+@import "composants/bouton";
 //@import "composants/bouton";
 //@import "composants/menu";

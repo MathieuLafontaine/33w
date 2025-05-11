@@ -11,7 +11,9 @@
     <header class="entete">
       <div class="entete__contenu">
         <!--Source pour les svg: https://www.svgrepo.com/-->
-        <img src="./image/logo.svg" alt="logo" class="entete__logo" />
+        <picture>
+          <img src="./image/logo.svg" alt="logo" class="entete__logo" />
+        </picture>
         <label for="chk__menu" class="entete__burger">
           <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32" />
         </label>
@@ -37,46 +39,61 @@
     </header>
     <section class="hero">
       <div class="hero__contenu">
-        <h1 class="hero__titre">Club de voyage</h1>
+        <h1 class="hero__titre">Northern Hare-lines</h1>
         <p class="hero__description">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur incidunt quas eius totam veniam, molestiae
           officiis cupiditate ut possimus tempore veritatis illum dignissimos, pariatur atque nulla architecto a natus
           voluptatibus!
         </p>
+        <a href="#" class="bouton">Lorem</a>
       </div>
     </section>
-    <!--Images trouvees sur Unsplash-->
-    <section class="gallerie">
-      <h2 class="gallerie__titre">Découvrez de nouvelles destinations!</h2>
-      <section class="gallerie__conteneur">
-        <picture class="gallerie__image__conteneur">
-          <img src="./image/gallerie-alpes.jpg" alt="alpes" class="gallerie__image" />
-        </picture>
-        <picture class="gallerie__image__conteneur">
-          <img src="./image/gallerie-bermudes.jpg" alt="bermudes" class="gallerie__image" />
-        </picture>
-        <picture class="gallerie__image__conteneur">
-          <img src="./image/gallerie-croisiere.jpg" alt="croisiere" class="gallerie__image" />
-        </picture>
-        <picture class="gallerie__image__conteneur">
-          <img src="./image/gallerie-fiji.jpg" alt="fiji" class="gallerie__image" />
-        </picture>
-        <picture class="gallerie__image__conteneur">
-          <img src="./image/gallerie-irlande.jpg" alt="irlande" class="gallerie__image" />
-        </picture>
-        <picture class="gallerie__image__conteneur">
-          <img src="./image/gallerie-japon.jpg" alt="japon" class="gallerie__image" />
-        </picture>
-        <picture class="gallerie__image__conteneur">
-          <img src="./image/gallerie-mexique.jpg" alt="mexique" class="gallerie__image" />
-        </picture>
-        <picture class="gallerie__image__conteneur">
-          <img src="./image/gallerie-rocheuses.jpg" alt="rocheuses" class="gallerie__image" />
-        </picture>
+    <section class="contenu-principal">
+      <!--Images trouvees sur Unsplash-->
+      <section class="gallerie contenu-principal__conteneur">
+        <h2 class="gallerie__titre">Sautez dans de nouvelles destinations!</h2>
+        <section class="gallerie__conteneur">
+          <picture class="gallerie__image__conteneur">
+            <img src="./image/gallerie-alpes.jpg" alt="alpes" class="gallerie__image" />
+          </picture>
+          <picture class="gallerie__image__conteneur">
+            <img src="./image/gallerie-bermudes.jpg" alt="bermudes" class="gallerie__image" />
+          </picture>
+          <picture class="gallerie__image__conteneur">
+            <img src="./image/gallerie-croisiere.jpg" alt="croisiere" class="gallerie__image" />
+          </picture>
+          <picture class="gallerie__image__conteneur">
+            <img src="./image/gallerie-fiji.jpg" alt="fiji" class="gallerie__image" />
+          </picture>
+          <picture class="gallerie__image__conteneur">
+            <img src="./image/gallerie-irlande.jpg" alt="irlande" class="gallerie__image" />
+          </picture>
+          <picture class="gallerie__image__conteneur">
+            <img src="./image/gallerie-japon.jpg" alt="japon" class="gallerie__image" />
+          </picture>
+          <picture class="gallerie__image__conteneur">
+            <img src="./image/gallerie-mexique.jpg" alt="mexique" class="gallerie__image" />
+          </picture>
+          <picture class="gallerie__image__conteneur">
+            <img src="./image/gallerie-rocheuses.jpg" alt="rocheuses" class="gallerie__image" />
+          </picture>
+        </section>
+      </section>
+      <section class="populaire contenu-principal__conteneur">
+        <h2 class="populaire__titre">Sautez dans nos destinations les plus populaires!</h2>
+        <section class="populaire__contenu">
+          <picture class="populaire__image__conteneur"
+            ><img class="populaire__image" src="./image/populaire.jpg" alt="image-populaire"
+          /></picture>
+          <p class="populaire__texte">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consectetur nihil tempora ullam, quaerat
+            ratione quia aperiam incidunt libero autem nemo cum omnis. Quibusdam itaque neque dolorem, officiis maiores
+            necessitatibus, laudantium, fugit ratione quam debitis nulla consequuntur. Aliquam, quia deserunt, adipisci
+            cupiditate nemo natus officia, necessitatibus modi commodi qui quod.
+          </p>
+        </section>
       </section>
     </section>
-    <section class="populaire"></section>
-
     <footer class="piedpage">
       <nav role="menubar" class="piedpage__nav">
         <a href="#" role="menuitem" class="piedpage__menu-item">Carrières</a>
@@ -84,7 +101,7 @@
         <a href="#" role="menuitem" class="piedpage__menu-item">FAQ</a>
         <a href="#" role="menuitem" class="piedpage__menu-item">Contact</a>
       </nav>
-      <p class="contenu__pied-de-page__droits">&copy;Tous droits réservés</p>
+      <p class="piedpage__droits">&copy;Tous droits réservés</p>
     </footer>
   </body>
   <script src="script/checkbox.js"></script>

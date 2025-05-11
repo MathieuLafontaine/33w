@@ -1,5 +1,6 @@
 .piedpage {
   display: flex;
+  padding-top: 20px;
   background-color: #facfb4;
   flex-flow: column;
   align-items: center;
@@ -14,5 +15,13 @@
     display: block;
     color: inherit;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__droits {
+    font-size: 0.75rem;
   }
 }

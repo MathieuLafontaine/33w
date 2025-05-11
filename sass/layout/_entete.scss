@@ -51,9 +51,11 @@
 
     a {
       display: block;
-      background-color: beige;
+      text-decoration: none;
+      color: inherit;
+      background-color: #facfb4;
       &:hover {
-        background-color: rgb(233, 227, 177);
+        background-color: #baa79b;
       }
     }
   }
