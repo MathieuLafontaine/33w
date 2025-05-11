@@ -61,7 +61,7 @@ body {
 }
 
 .entete {
-  background-color: blanchedalmond;
+  background-color: #facfb4;
   /*  //////////// Navigation */
 }
 .entete__contenu {
@@ -108,7 +108,7 @@ body {
 }
 
 .hero {
-  background-image: url("../../image/hero-banniere.jpg");
+  background-image: url("../image/hero-banniere.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -116,6 +116,23 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.piedpage {
+  display: flex;
+  background-color: #facfb4;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.piedpage__nav {
+  display: flex;
+  gap: 20px;
+}
+.piedpage__menu-item {
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
 /* ////////////////////////////////  composants */
