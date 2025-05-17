@@ -1,0 +1,19 @@
+.gallerie {
+  &__titre {
+    font-size: 1.5rem;
+  }
+
+  &__conteneur {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

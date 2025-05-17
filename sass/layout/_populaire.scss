@@ -1,0 +1,30 @@
+/*Règles générales de la structure de populaire-----------*/
+
+.populaire {
+  &__contenu {
+    display: flex;
+    gap: 20px;
+  }
+
+  /*Divison egale des images et texte de la section populaire*/
+
+  &__texte,
+  &__image {
+    flex-basis: 50%;
+  }
+
+  &__image {
+    width: 50vw;
+    margin-right: 30px;
+  }
+
+  &__titre {
+    font-size: 1.1rem;
+  }
+
+  @media screen and (max-width: $point-paragraphe) {
+    &__texte {
+      font-size: 0.8rem;
+    }
+  }
+}

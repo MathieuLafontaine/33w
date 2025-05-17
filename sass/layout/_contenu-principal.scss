@@ -1,0 +1,19 @@
+.contenu-principal {
+  /*Rythme vertical de base pour le contenu principal*/
+  & * + h1,
+  & * + h2 {
+    margin-top: 20px;
+  }
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+
+  /* Rythme vertical espacé pour bien dégager les principaux conteneurs de contenu */
+
+  &__conteneur {
+    margin: 72px auto 0 auto;
+    max-width: 100rem;
+    padding: 0 20px;
+  }
+}
