@@ -57,6 +57,7 @@
         </section>
     </section>
     <section class="destinations contenu-principal__conteneur">
+        <h1 class="destinations__titre">Index des destinations</h1>
         <?php if (have_posts()):
             while (have_posts()): (the_post()); ?>
                 <h1><?= the_title(); ?></h1>

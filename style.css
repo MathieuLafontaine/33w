@@ -146,6 +146,9 @@ body {
 .hero__logo, .hero__bouton {
   margin: 16px 0 16px 0;
 }
+.hero__titre {
+  font-size: 2rem;
+}
 
 .piedpage {
   display: flex;
@@ -187,7 +190,7 @@ body {
   margin-right: 30px;
 }
 .populaire__titre {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 @media screen and (max-width: 768px) {
   .populaire__texte {
@@ -195,6 +198,9 @@ body {
   }
 }
 
+.destinations {
+  margin-bottom: 20px;
+}
 .destinations h1 {
   font-size: 1.25rem;
 }
