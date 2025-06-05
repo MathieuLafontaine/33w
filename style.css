@@ -21,7 +21,8 @@ Text Domain: club-voyage
   /*Rythme vertical de base pour le contenu principal*/
   /* Rythme vertical espacé pour bien dégager les principaux conteneurs de contenu */
 }
-.contenu-principal * + h1, .contenu-principal * + h2 {
+.contenu-principal * + h1,
+.contenu-principal * + h2 {
   margin-top: 20px;
 }
 .contenu-principal:last-child {
@@ -126,7 +127,7 @@ body {
 }
 
 .hero {
-  background-image: url("../image/hero-banniere.jpg");
+  background-image: url("/wp-content/themes/clubVoyage/image/hero-banniere.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -143,7 +144,8 @@ body {
   background-color: rgba(223, 218, 218, 0.5);
   border-radius: 4px;
 }
-.hero__logo, .hero__bouton {
+.hero__logo,
+.hero__bouton {
   margin: 16px 0 16px 0;
 }
 .hero__titre {
@@ -182,7 +184,8 @@ body {
   display: flex;
   gap: 20px;
 }
-.populaire__texte, .populaire__image {
+.populaire__texte,
+.populaire__image {
   flex-basis: 50%;
 }
 .populaire__image {
@@ -256,4 +259,4 @@ body {
   background-color: #7ba4a5;
   color: #fff;
   transition-duration: 0.4s;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
