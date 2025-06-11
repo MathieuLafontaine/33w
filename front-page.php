@@ -1,7 +1,8 @@
-<!-- modele index represente le modelepar default -->
-<h1>---------index.php-------------</h1>
-<?=
-get_header(); ?>
+<?php //Le modele front-page permet d'afficher la page d'accueil
+?>
+
+<?= get_header(); ?>
+<h1>------------Front-page.php--------------</h1>
 <section class="hero">
     <div class="hero__contenu">
         <h1 class="hero__titre">Northern Hare-lines</h1>
@@ -67,6 +68,11 @@ get_header(); ?>
         <?= the_content();
             endwhile;
         endif; ?>
+        <?php
+        /*Cette fonction affiche l'entierete du <post></post>*/
+        $lien = "<a href=" . get_permalink() . ">Suite</a>";
+        wp_trim_words(get_the_excerpt(), 10, $lien);
+        ?>
     </section>
 </section>
 <?= get_footer(); ?>

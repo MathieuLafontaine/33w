@@ -1,0 +1,11 @@
+.populaire {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  &__carte {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 300px;
+  }
+}
