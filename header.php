@@ -18,7 +18,7 @@
                 <img src="./image/logo.svg" alt="logo" class="entete__logo" />
             </picture> -->
             <figure class="entete__logo">
-                <?php get_custom_logo(); ?>
+                <?php echo get_custom_logo(); ?>
             </figure>
             <label for="chk__menu" class="entete__burger">
                 <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32" />

@@ -1,4 +1,4 @@
-<?= wp_footer(); ?>
+<?php wp_footer(); ?>
 <footer class="piedpage">
     <nav role="menubar" class="piedpage__nav">
         <a href="#" role="menuitem" class="piedpage__menu-item">Carrières</a>
@@ -9,7 +9,7 @@
     <p class="piedpage__droits">&copy;Tous droits réservés</p>
 </footer>
 <script src="script/checkbox.js"></script>
-<?= wp_footer(); ?>
 </body>
+<?php wp_footer(); ?>
 
 </html>

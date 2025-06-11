@@ -1,7 +1,7 @@
 <?php //Le modele front-page permet d'afficher la page d'accueil
 ?>
 
-<?= get_header(); ?>
+<?php get_header(); ?>
 <h1>------------Front-page.php--------------</h1>
 <section class="hero">
     <div class="hero__contenu">
@@ -49,7 +49,7 @@
             </picture>
         </section>
     </section>
-    <section class="populaire contenu-principal__conteneur">
+    <!--     <section class="populaire contenu-principal__conteneur">
         <h2 class="populaire__titre">Sautez dans nos destinations les plus populaires!</h2>
         <section class="populaire__contenu">
             <picture class="populaire__image__conteneur"><img class="populaire__image" src="/wp-content/themes/clubVoyage/image/populaire.jpg" alt="image-populaire" /></picture>
@@ -59,15 +59,36 @@
                 necessitatibus, laudantium, fugit ratione quam debitis nulla consequuntur.
             </p>
         </section>
+    </section> -->
+
+    <section class="populaire">
+        <?php if (have_posts()) {
+            while (have_posts()) {
+                the_post(); ?>
+        <?= the_content();
+            }
+        } ?>
+        <article class="populaire__carte">
+            <?php the_post_thumbnail('thumbnail'); ?>
+            <h2><?php the_title(); ?></h2>
+            <p>
+                <?php
+                /*cette fonction permet d'afficher l'ensemble du contenu du post the content*/
+                $lien = "<a href=" . get_permalink() . ">suite</a>";
+                echo wp_trim_words(get_the_excerpt(), 10, $lien); ?>
+            </p>
+        </article>
     </section>
+
     <section class="destinations contenu-principal__conteneur">
         <h1 class="destinations__titre"><?= the_title(); ?></h1>
-        <?php if (have_posts()):
-            while (have_posts()): (the_post()); ?>
+        <?php if (have_posts()) {
+            while (have_posts()) {
+                (the_post()); ?>
                 <h1><?= the_title(); ?></h1>
         <?= the_content();
-            endwhile;
-        endif; ?>
+            }
+        } ?>
         <?php
         /*Cette fonction affiche l'entierete du <post></post>*/
         $lien = "<a href=" . get_permalink() . ">Suite</a>";
@@ -75,4 +96,4 @@
         ?>
     </section>
 </section>
-<?= get_footer(); ?>
+<?php get_footer(); ?>

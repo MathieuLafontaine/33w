@@ -60,13 +60,14 @@ get_header(); ?>
         </section>
     </section>
     <section class="destinations contenu-principal__conteneur">
-        <h1 class="destinations__titre"><?= the_title(); ?></h1>
-        <?php if (have_posts()):
-            while (have_posts()): (the_post()); ?>
+        <h1 class="destinations__titre"><?php the_title(); ?></h1>
+        <?php if (have_posts()) {
+            while (have_posts()) {
+                (the_post()); ?>
                 <h1><?= the_title(); ?></h1>
         <?= the_content();
-            endwhile;
-        endif; ?>
+            }
+        } ?>
     </section>
 </section>
-<?= get_footer(); ?>
+<?php get_footer(); ?>
