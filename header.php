@@ -18,7 +18,7 @@
                 <img src="./image/logo.svg" alt="logo" class="entete__logo" />
             </picture> -->
             <figure class="entete__logo">
-                <?php echo get_custom_logo(); ?>
+                <?= get_custom_logo(); ?>
             </figure>
             <label for="chk__menu" class="entete__burger">
                 <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32" />
@@ -40,12 +40,13 @@
                     'container_class'      => 'entete__nav',
                     'menu_class'           => 'entete__menu',
                 )); ?>
-                <form class="recherche" action="">
+                <?php get_search_form() ?>
+                <!--                 <form class="recherche" action="">
                     <input class="recherche__input" type="search" name="" id="" />
                     <button class="recherche__bouton">
                         <img src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=000" width="32" height="32" />
                     </button>
-                </form>
+                </form> -->
             </nav>
         </div>
     </header>

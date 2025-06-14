@@ -77,6 +77,11 @@ body {
   flex-direction: column;
 }
 
+.custom-logo {
+  width: 75px;
+  height: 75px;
+}
+
 .entete {
   background-color: #facfb4;
   /*  //////////// Navigation */
@@ -259,4 +264,21 @@ body {
   background-color: #7ba4a5;
   color: #fff;
   transition-duration: 0.4s;
+}
+
+.conteneur {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.conteneur__carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 0 300px;
+  border: 1px solid #aaa;
+  padding: 10px;
+}
+.conteneur__galerie {
+  flex: 1 0 100%;
 } /*# sourceMappingURL=style.css.map */
