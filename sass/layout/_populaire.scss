@@ -1,6 +1,8 @@
 /*Règles générales de la structure de populaire-----------*/
 
 .populaire {
+  margin: 20px 0 20px 0;
+
   &__contenu {
     display: flex;
     gap: 20px;

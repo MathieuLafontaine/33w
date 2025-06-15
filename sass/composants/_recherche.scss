@@ -2,12 +2,11 @@
 ///////////////////////// Composante .recherche
 */
 .recherche {
-  border: 1px solid #aaa;
   display: flex;
   align-items: center;
   &__input {
-    border: none;
-    outline: none;
+    border: 1px solid #aaa;
+    width: 100%;
   }
   &__bouton {
     border-left: 1px solid #aaa;

@@ -21,16 +21,16 @@ function theme_tp_enqueue_styles()
 {
     //Ce hook s'active au load de la page
     wp_enqueue_style('normalize', get_template_directory_uri() . '/normalize.css');
-    wp_enqueue_style('main-style', get_stylesheet_uri());
 
     $css_path = get_template_directory() . '/style.css';
     $css_url = get_template_directory_uri() . '/style.css';
 
-    wp_enqueue_script(
+    wp_enqueue_style(
         'main-style',
         $css_url,
         array(),
-        filemtime($css_path)
+        filemtime($css_path),
+        null
     );
 
     $script_path = get_template_directory() . '/script/checkbox.js';
@@ -40,7 +40,8 @@ function theme_tp_enqueue_styles()
         'mon-script',
         $script_url,
         array(),
-        filemtime($script_path)
+        filemtime($script_path),
+        true
     );
 }
 
@@ -55,3 +56,8 @@ function modifie_requete_principal($query)
     }
 }
 add_action('pre_get_posts', 'modifie_requete_principal');
+
+add_filter('wp_lazy_loading_enabled', '__return_false');
+
+/*Pour afficher le background du hero)*/
+add_theme_support('custom-background');

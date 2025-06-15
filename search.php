@@ -2,7 +2,7 @@
 ?>
 
 <?php get_header(); ?>
-<h1>------------search.php--------------</h1>
+<!-- <h1>------------search.php--------------</h1> -->
 <section class="hero">
     <div class="hero__contenu">
         <h1 class="hero__titre">Northern Hare-lines</h1>

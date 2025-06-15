@@ -2,8 +2,8 @@
 ?>
 
 <?php get_header(); ?>
-<h1>------------Front-page.php--------------</h1>
-<section class="hero">
+<!-- <h1>------------Front-page.php--------------</h1> -->
+<section class="hero" style="background-image: url('<?= get_template_directory_uri(); ?>/image/hero-banniere.jpg');">
     <div class="hero__contenu">
         <h1 class="hero__titre">Northern Hare-lines</h1>
         <p class="hero__description">
@@ -13,8 +13,9 @@
         </p>
         <a href="#" class="bouton hero__bouton">Lorem</a>
         <picture class="hero__logo">
-            <img src="/wp-content/themes/clubVoyage/image/facebook.svg" alt="logo-facebook" width="32" height="32" />
-            <img src="/wp-content/themes/clubVoyage/image/instagram.svg" alt="logo-instagram" width="32" height="32" />
+            <?php
+            get_template_part("gabarit/icone");
+            ?>
         </picture>
     </div>
 </section>

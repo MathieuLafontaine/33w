@@ -5,8 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil Maquette</title>
-    <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./sass/style.css" />
     <?= wp_head(); ?>
 </head>
 
@@ -17,7 +15,7 @@
             <!--             <picture>
                 <img src="./image/logo.svg" alt="logo" class="entete__logo" />
             </picture> -->
-            <figure class="entete__logo">
+            <figure class="custom-logo">
                 <?= get_custom_logo(); ?>
             </figure>
             <label for="chk__menu" class="entete__burger">
