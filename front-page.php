@@ -5,11 +5,9 @@
 <!-- <h1>------------Front-page.php--------------</h1> -->
 <section class="hero" style="background-image: url('<?= get_template_directory_uri(); ?>/image/hero-banniere.jpg');">
     <div class="hero__contenu">
-        <h1 class="hero__titre">Northern Hare-lines</h1>
+        <h1 class="hero__titre"><?php bloginfo('name') ?></h1>
         <p class="hero__description">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur incidunt quas eius totam veniam, molestiae
-            officiis cupiditate ut possimus tempore veritatis illum dignissimos, pariatur atque nulla architecto a natus
-            voluptatibus!
+            <?php bloginfo('description') ?>
         </p>
         <a href="#" class="bouton hero__bouton">Lorem</a>
         <picture class="hero__logo">
