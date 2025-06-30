@@ -105,7 +105,7 @@ body {
   flex-wrap: wrap;
   margin: 0 2rem 0 auto;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .entete__nav {
     display: none;
   }
@@ -113,7 +113,7 @@ body {
 .entete__burger {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .entete__burger {
     display: block;
     position: absolute;

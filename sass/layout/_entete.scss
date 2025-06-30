@@ -6,6 +6,7 @@
 .chk__menu:checked ~ .entete__nav {
   display: flex;
   flex-direction: column;
+
   .entete__menu {
     flex-direction: column;
   }
