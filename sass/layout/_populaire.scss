@@ -3,11 +3,6 @@
 .populaire {
   margin: 20px 0 20px 0;
 
-  &__contenu {
-    display: flex;
-    gap: 20px;
-  }
-
   @media screen and (max-width: $point-paragraphe) {
     & {
       font-size: 0.8rem;

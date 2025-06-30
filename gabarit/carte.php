@@ -13,5 +13,6 @@ $lien = "<a href=" . get_permalink() . ">Suite</a>";
     <p>Température minimum <?php the_field('temperature_minimum'); ?></p>
     <p>Température maximum <?php the_field('temperature_maximum'); ?></p>
     <p>Température moyenne <?php the_field('temperature_moyenne'); ?></p>
+    <p>Appréciation <?php the_field('appreciation'); ?></p>
     <?php the_category() ?>
 </article>

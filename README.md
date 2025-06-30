@@ -1,5 +1,5 @@
 # 33w
 
-### Premiere etape du developpement d'un theme WP
+### Deuxieme etape du developpement d'un theme WP: Partie 1
 
-####Auteur : Eddy Martin ####Adresse de la github page
+####Auteur : Mathieu Lafontaine ####https://MathieuLafontaine.github.io/33w/

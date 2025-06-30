@@ -21,8 +21,7 @@ Text Domain: club-voyage
   /*Rythme vertical de base pour le contenu principal*/
   /* Rythme vertical espacé pour bien dégager les principaux conteneurs de contenu */
 }
-.contenu-principal * + h1,
-.contenu-principal * + h2 {
+.contenu-principal * + h1, .contenu-principal * + h2 {
   margin-top: 20px;
 }
 .contenu-principal:last-child {
@@ -44,10 +43,6 @@ html {
   box-sizing: inherit;
 }
 
-* {
-  border: 1px solid #ccc;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -58,7 +53,6 @@ body {
 
 .global {
   display: flex;
-  flex-flow: column;
   justify-content: center;
   padding: 0;
   box-sizing: border-box;
@@ -123,7 +117,7 @@ body {
   .entete__burger {
     display: block;
     position: absolute;
-    top: 0;
+    top: 60px;
     right: 0;
   }
 }
@@ -159,8 +153,7 @@ body {
   background-color: rgba(223, 218, 218, 0.5);
   border-radius: 4px;
 }
-.hero__logo,
-.hero__bouton {
+.hero__logo, .hero__bouton {
   margin: 16px 0 16px 0;
 }
 .hero__titre {
@@ -204,10 +197,6 @@ body {
 /*Règles générales de la structure de populaire-----------*/
 .populaire {
   margin: 20px 0 20px 0;
-}
-.populaire__contenu {
-  display: flex;
-  gap: 20px;
 }
 @media screen and (max-width: 768px) {
   .populaire {
@@ -283,11 +272,9 @@ body {
 .conteneur__carte {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex: 1 0 300px;
   border: 1px solid #aaa;
   padding: 10px;
 }
 .conteneur__galerie {
   flex: 1 0 100%;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
