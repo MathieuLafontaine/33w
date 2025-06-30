@@ -272,6 +272,7 @@ body {
 .conteneur__carte {
   display: flex;
   flex-direction: column;
+  max-width: 30%;
   border: 1px solid #aaa;
   padding: 10px;
 }
